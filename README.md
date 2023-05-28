@@ -225,16 +225,16 @@ Hence, any time staff is to be given a unique ID, the following syntax is used
 **NEXT,** viewing each department staff record:
 
           SELECT * FROM logis_dept;
-![](IMAGE01.jpeg)
+![](IMAGE01N.jpg)
 
           SELECT * FROM ware_dept; 
-![](IMAGE02.jpeg)
+![](IMAGE02N.jpg)
 
           SELECT * FROM prod_dept;
-![](IMAGE03.jpeg)
+![](IMAGE03N.jpg)
 
           SELECT * FROM hr_dept; 
-![](IMAGE04.jpeg)
+![](IMAGE04N.jpg)
 
 ## Step 3
 
@@ -472,7 +472,7 @@ Viewing the payment record table:
 
       SELECT * FROM payment_record;
     
-![](IMAGE05.jpeg)           ![](IMAGE06.jpeg) 
+![](IMAGE05N.jpg)           ![](IMAGE06N.jpg) 
 
 **NEXT,** obtaining the total aggregate salary payment for the departments, along side with the individual department total payment salary:
 
@@ -501,7 +501,7 @@ So at any time the Total salary by individual department and with the Total aggr
 
         CALL salary_payment() ;
         
-![](IMAGE07.jpeg)
+![](IMAGE07N.jpg)
 
 ## Step 4 
 
@@ -629,7 +629,7 @@ for Production department
         (SELECT COUNT(gender)
         FROM prod_dept) * 100 AS 'male_percent';
 
-![](IMAGE08.jpeg)
+![](IMAGE08N.jpg)
 
 for warehouse department 
 
@@ -645,7 +645,7 @@ for warehouse department
         (SELECT COUNT(gender)
         FROM ware_dept) * 100 AS 'male_percent';
 
-![](IMAGE09.jpeg)
+![](IMAGE09N.jpg)
 
         SAVEPOINT my_saves;
 
@@ -688,14 +688,14 @@ For warehouse department
 
         SELECT * FROM ware_dept;
 
-![](IMAGE10.jpeg)
+![](IMAGE10N.jpg)
 
 
 The new staff entry is from sn 21 to 30, and without staff Id. So assigning staff ID, we call the procedure;
 
         CALL update_staff_id_ware();
 
-![](IMAGE11.jpeg)
+![](IMAGE11N.jpg)
 
 Now we see the new staff has automatically been given unique staff id 
 
@@ -703,13 +703,13 @@ For production department;
 
       SELECT * FROM prod_dept;
 
-![](IMAGE12.jpeg)
+![](IMAGE12N.jpg)
 
 The new staff entry is from sn 21 to 30, and with no staff id. So assigning staff id, we call the procedure:
 
       CALL update_staff_id_prod();
 
-![](IMAGE13.jpeg)
+![](IMAGE13N.jpg)
 
 Now the new staffs have been given unique staff id numbers.
 
@@ -719,7 +719,7 @@ Now the new staffs have been given unique staff id numbers.
 
           SELECT * FROM payment_record;
 
-![](IMAGE14.jpeg)
+![](IMAGE14N.jpg)
 
 Now, we see the new staff profile have been automatically inserted into the payment records and their salary have been updated with regards to qualification and position held by the staff.
 
@@ -727,7 +727,7 @@ Now, we see the new staff profile have been automatically inserted into the paym
 
               SELECT * FROM archive_record;
 
-![](IMAGE15.jpeg)
+![](IMAGE15N.jpg)
 
 The new staff record was automatically updated into the archive record once it was inserted into the respective department tables. And this attest for accuracy of staff records audit trail.
 
