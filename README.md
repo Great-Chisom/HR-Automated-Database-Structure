@@ -732,7 +732,7 @@ Now, we see the new staff profile have been automatically inserted into the paym
 The new staff record was automatically updated into the archive record once it was inserted into the respective department tables. And this attest for accuracy of staff records audit trail.
 
 
-##Conclusion:
+## Conclusion:
 
 The Database structure is efficient and accurate in maintaining staff records and payment porfolio. And this database structure can be used for any number of departments and any number of staff.
 
